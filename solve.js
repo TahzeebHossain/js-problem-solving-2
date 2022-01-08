@@ -19,3 +19,17 @@ function temperatureconverter (celsius, fahrenheit) {
 }
 
 temperatureconverter(4,14);
+
+//Check if the number is positive or negative
+
+function plusOrMinus(givenNumber) {
+    if (givenNumber > 0) {
+        console.log(`${givenNumber} is a Positive Number`);
+    } else if (givenNumber === 0) {
+        console.log(`${givenNumber} is 0`);
+    } else {
+        console.log(`${givenNumber} is a negative Number`);
+    }
+}
+
+plusOrMinus(0)
