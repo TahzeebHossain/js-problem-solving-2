@@ -1,8 +1,8 @@
 // multiplication and division
 
 function multidiv(num1, num2){
-    console.log("The Product of the two numbers is " + num1*num2);
-    console.log("When you divide the first number with the second number you get " + num1/num2);
+    console.log("The Product of the two numbers is " + (num1*num2).toFixed(2));
+    console.log("When you divide the first number with the second number you get " + (num1/num2).toFixed(2));
 }
 
 multidiv(456,7)
