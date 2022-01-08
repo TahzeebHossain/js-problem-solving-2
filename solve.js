@@ -59,8 +59,21 @@ plusOrMinus(0)
 //Removing a character from a string and returning the new string
 let phraseSpoken = "I am not a Coder";
 
-let phraseCOrrected = phraseSpoken.split("not" && " ");
+let phraseCOrrected = phraseSpoken.split("not");
+
+console.log(phraseCOrrected);
 
 let newPhrase = phraseCOrrected.join(" ");
 
 console.log(newPhrase);
+
+//Reverse a string
+
+function reverser(str){
+    let diced = str.split("");
+    let flipped = diced.reverse();
+    let resversedString = flipped.join("");
+    console.log(resversedString);
+}
+
+reverser("clear");
