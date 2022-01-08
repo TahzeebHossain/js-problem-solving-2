@@ -20,6 +20,28 @@ function temperatureconverter (celsius, fahrenheit) {
 
 temperatureconverter(4,14);
 
+//tell if one number is positive and the other negative
+
+function plusOrMinusdual(numberOne, numberTwo) {
+    if (numberOne > 0 && numberTwo < 0){
+        console.log(`${numberOne} is positive and ${numberTwo} is negative`);
+    } else if (numberOne < 0 && numberTwo > 0){
+        console.log(`${numberOne} is negative and ${numberTwo} is positive`);
+    } else if (numberOne > 0 && numberTwo > 0){
+        console.log(`${numberOne} and ${numberTwo} are both positive`);
+    } else if (numberOne < 0 && numberTwo < 0) {
+        console.log(`${numberOne} and ${numberTwo} are both negative`);
+    } else {
+        console.log("Both Numbers are 0");
+    }
+}
+
+plusOrMinusdual(-12,-12);
+
+
+
+
+
 //Check if the number is positive or negative
 
 function plusOrMinus(givenNumber) {
