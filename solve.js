@@ -55,3 +55,12 @@ function plusOrMinus(givenNumber) {
 }
 
 plusOrMinus(0)
+
+//Removing a character from a string and returning the new string
+let phraseSpoken = "I am not a Coder";
+
+let phraseCOrrected = phraseSpoken.split("not" && " ");
+
+let newPhrase = phraseCOrrected.join(" ");
+
+console.log(newPhrase);
