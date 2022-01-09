@@ -78,7 +78,7 @@ function reverser(str){
 
 reverser("clear");
 
-//two objects
+//three objects
 
 const studentOneDetails = {
     firstName: "Tahjeeb",
@@ -110,3 +110,19 @@ const movieRecord = {
 }
 console.log(movieRecord.nextMovie());
 console.log(movieRecord.upcomingMovieoftheactor());
+
+const languageKnowledge = {
+    langName: "Javascript",
+    useCase: "Web Development",
+    popularity: "High",
+    knownFrameworks: ["React","Angular", "Vue", "node.js", "next.js"],
+    exampleStatement: function() {
+        console.log(`${this.knownFrameworks[4]} is a full stack javascript framework for ${this.knownFrameworks[0]} js`)
+    },
+    jobMarket: function() {
+        console.log(`If you can use vanilla ${this.langName} and learn ${this.knownFrameworks[0]} or ${this.knownFrameworks[2]} you will have good demand as a frontend developer`)
+    }
+}
+
+console.log(languageKnowledge.exampleStatement());
+console.log(languageKnowledge.jobMarket());
