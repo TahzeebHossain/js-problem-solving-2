@@ -77,3 +77,36 @@ function reverser(str){
 }
 
 reverser("clear");
+
+//two objects
+
+const studentOneDetails = {
+    firstName: "Tahjeeb",
+    lastName: "Omio",
+    birthDate: "16, January 1994",
+    declareBDay: function() {
+        console.log(`${this.firstName} ${this.lastName} is his name and he came to earth in ${this.birthDate}`)
+    },
+    prediction: function(){
+        console.log(`${this.lastName} will one day become known for the most number of naps taken on daily bus journeys`)
+    }
+
+}
+console.log(studentOneDetails.declareBDay());
+console.log(studentOneDetails.prediction());
+
+const movieRecord = {
+    movieName: "Spiderman: No Way Home",
+    directorName: "Jon Watts",
+    leadActor: "Tom Holland",
+    endingSequence: "They all forget about him",
+    nextMovie: function() {
+        console.log(`The movie after ${this.movieName} will be Doctor Strange: Multiverse of Madness`)
+    },
+    upcomingMovieoftheactor: function(){
+        console.log(`${this.leadActor} will star in the video game movie adaptation of Uncharted`)
+    }
+
+}
+console.log(movieRecord.nextMovie());
+console.log(movieRecord.upcomingMovieoftheactor());
